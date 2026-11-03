@@ -1,6 +1,6 @@
-This repo is an implementation of the CESM (https://github.com/ESCOMP/CESM) model in .esm files.
+This repo is an implementation of the GEOSChem (https://github.com/GEOSChem) model in .esm files.
 
-CESM is made up of process components that are composed together into the large-scale model. Implementation will take place in three stages.
+GEOSChem is made up of process components that are composed together into the large-scale model. Implementation will take place in three stages.
 
 In the first stage, the original C++ or FORTRAN model code will be instrumented to output inputs and outputs from each model component during simulations. Outputs can either be instantaneous derivatives (preferred) or integrated trajectories over a time period. The code will also be instrumented to output inputs and outputs of subassemblies of components as appropriate. A select subset of these inputs and outputs will be used as tests in .esm stub files for each component or subassembly which will be added as pull requests to https://github.com/EarthSciML/EarthSciModels.
 
@@ -26,7 +26,7 @@ Do not put "Co-Authored-By: Claude ..." in any commit messages, or any other cla
 
 Do not put files directly in /projects/.../ctessum, that is a shared directory with other people. Store files that should be persistent over a medium horizon but not checked into git in a .gitignored subdirectory of your working directory. Store temporary files in /scratch.local/ctessum; these might disappear between sessions.
 
-Key files: `PLAN.md` is the implementation plan (CESM inventory, stage playbooks, milestones); `PROGRESS.md` records what has been done, what was decided, and what is next; `bugs.md` is the centralized CESM bug list.
+Key files: `PLAN.md` is the implementation plan (GEOSChem inventory, stage playbooks, milestones); `PROGRESS.md` records what has been done, what was decided, and what is next; `bugs.md` is the centralized GEOSChem bug list.
 
 For examples of other projects following the same approach, see:
 	* github.com/earthsciml/eqwefic
